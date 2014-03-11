@@ -1,0 +1,31 @@
+#joystick {
+    width : 300px;
+    height : 300px;
+    margin : auto;
+    background : #888;
+    border : solid 10px #666;
+
+    -webkit-border-radius : 150px;
+    -moz-border-radius:150px;
+    border-radius:150px;
+}
+
+#joystick div {
+    position : relative;
+    width : 100px;
+    height : 100px;
+    background : #222;
+    border : solid 3px #444;
+
+    -webkit-border-radius : 50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+}
+
+#webcam {
+    height : 500px;
+}
+
+#keyboard {
+    margin : auto;
+}
