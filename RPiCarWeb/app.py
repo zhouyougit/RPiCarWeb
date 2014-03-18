@@ -1,6 +1,6 @@
 from flask import Flask
 
-from views import RPiCarWeb
+from views import carPage
 
 def create_app() :
     app = Flask(__name__)
@@ -9,4 +9,4 @@ def create_app() :
     return app
 
 def configureBlueprint(app) :
-    app.register_blueprint(RPiCarWeb)
+    app.register_blueprint(carPage)

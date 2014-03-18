@@ -22,6 +22,8 @@ def index() :
 @carPage.route('/run', methods=['POST', 'GET'])
 def run() :
     car = Car.getCar()
+    if not car.isInitWhell() :
+        car.initWhell(11, 12, 13, 15)
     l = request.form.get('l', '0')
     r = request.form.get('r', '0')
     t = request.form.get('t', '0')
@@ -32,6 +34,8 @@ def run() :
 @carPage.route('/run2', methods=['POST', 'GET'])
 def run2() :
     car = Car.getCar()
+    if not car.isInitWhell() :
+        car.initWhell(11, 12, 13, 15)
     x = request.form.get('x', '0')
     y = request.form.get('y', '0')
     t = request.form.get('t', '0')
